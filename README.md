@@ -2,6 +2,11 @@
 
 This solution has two projects: **HelloWorld** and **HelloWorldTests**.  The main api simply writes some given text to a specified writer via an http POST request.
 
+## Configuration file
+An optional configuration setting can be defined in appsetttings.json for "DefaultWriter". The possible values are "console", "file", "database" (case insenstitive). If this setting is missing the api will default to console.  
+
+    "DefaultWriter": "console"
+
 ## Call the API from a client
 Since it's an http request, any client that supports http requests can call the api.  Here are some examples from different clients.
 
